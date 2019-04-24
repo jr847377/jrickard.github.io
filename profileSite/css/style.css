@@ -8,14 +8,13 @@ height:auto;
 }
 
 .about_me_p{
-font-size: 18px;
+font-size: 17px;
 }
 
 
 
 .personal_logo{
-    width: 88%;
-    transform: grayscale(0.3);
+    width: 90%;
     margin-left: 7%;
     border-radius: 1vw;
     background-size: cover;
