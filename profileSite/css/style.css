@@ -3,27 +3,23 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
 
 .picture-logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
-  padding: 20px;
-  width: 300px;
-  height: 300px;
+max-width: 100%
+height:auto;
 }
 
-.about_me_row{
-position: absolute;
-right: 50px;
-width: 50%;
-height: 200px;
-padding: 70px 0;
+.about_me_p{
+font-size: 18px;
 }
+
+
 
 .personal_logo{
-  border-radius: 25px;
-  width: 400px;
-  height: 500px;
+    width: 88%;
+    transform: grayscale(0.3);
+    margin-left: 7%;
+    border-radius: 1vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .do-list-image{

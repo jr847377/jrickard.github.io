@@ -1,520 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Profile website</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/pe-icons.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <!--[if lt IE 9]>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Profile website</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/pe-icons.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
 
-    <script type="text/javascript">
-    jQuery(document).ready(function($){
-	'use strict';
-      	jQuery('body').backstretch([
-	        "images/GrandRapidsMI-Bridge.jpg",
-	        "images/grr.19.ss_.JjgUcCwT_jpeg.jpg",
-	    ], {duration: 5000, fade: 500, centeredY: true });
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      'use strict';
+      jQuery('body').backstretch([
+        "images/GrandRapidsMI-Bridge.jpg",
+        "images/grr.19.ss_.JjgUcCwT_jpeg.jpg",
+      ], {
+        duration: 5000,
+        fade: 500,
+        centeredY: true
+      });
 
-		$("#mapwrapper").gMap({ controls: false,
-         	scrollwheel: false,
-         	markers: [{
-              	latitude:42.9634,
-				longitude: 85.6681,
-          	icon: { image: "images/marker.png",
-              	iconsize: [44,44],
-          		iconanchor: [12,46],
-          		infowindowanchor: [12, 0] } }],
-          	icon: {
-              	image: "images/marker.png",
-             	iconsize: [26, 46],
-              	iconanchor: [12, 46],
-              	infowindowanchor: [12, 0] },
-         	latitude:40.7566,
-         	longitude: -73.9863,
-          	zoom: 14 });
+      $("#mapwrapper").gMap({
+        controls: false,
+        scrollwheel: false,
+        markers: [{
+          latitude: 42.9634,
+          longitude: 85.6681,
+          icon: {
+            image: "images/marker.png",
+            iconsize: [44, 44],
+            iconanchor: [12, 46],
+            infowindowanchor: [12, 0]
+          }
+        }],
+        icon: {
+          image: "images/marker.png",
+          iconsize: [26, 46],
+          iconanchor: [12, 46],
+          infowindowanchor: [12, 0]
+        },
+        latitude: 40.7566,
+        longitude: -73.9863,
+        zoom: 14
+      });
     });
-    </script>
-</head><!--/head-->
+  </script>
+</head>
+<!--/head-->
+
 <body>
-<div id="preloader"></div>
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content center centered">
-                                	<!--<span class="home-icon">
+  <div id="preloader"></div>
+  <section id="main-slider" class="no-margin">
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="carousel-content center centered">
+                  <!--<span class="home-icon">
                                         <img class="picture-logo"  src="images/Josh Rickard.jpg"></img>
                                 </span>-->
-                                    <h2 class="boxed animation animated-item-1 fade-down">Hey, I'm Josh &nbsp; &nbsp; <br/>Software developer in Grand Rapids, MI</h2>
-                                    <a class="btn btn-md animation bounce-in" href="#services">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
-
-
-
-    <div id="content-wrapper">
-        <section id="services" class="white">
-            <div class="container">
-            <div class="gap"></div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Stuff I Do</h2>
-                            <hr>
-                            <p>I enjoy taking on new projects and learning new things. Here are just a few I fill my time with.</p>
-                        </div>
-                    </div>
+                  <h2 class="boxed animation animated-item-1 fade-down">Hey, I'm Josh &nbsp; &nbsp; <br/>Software developer in Grand Rapids, MI</h2>
+                  <a class="btn btn-md animation bounce-in" href="#services">Learn More</a>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <img class="do-list-image" src="images/zoho-products-logo.jpg" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Zoho</h3>
-                                <p>CRM, Creator, custom functions. Skilled in deluge programming and building comprehensive reporting in zoho analytics.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                              <img class="do-list-image" src="images/apple-podcast.png" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Podcasting</h3>
-                                <p>Co-host a podcast on marketing and communication strategy for non-profits</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                  <img class="do-list-image" src="images/Screen-Shot-2016-03-28-at-7.51.42-AM.png" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Coding Challenges</h3>
-                                <p>If you don't use it you lose it. Participating in daily coding challenges allows me to continue to grow as a programmer.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div><!--/.row-->
-                <div class="gap"></div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <img class="do-list-image" src="images/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Programming</h3>
-                                <p>Aside from leveling up in code wars, I am also actively seeking opportunities to grow as developer.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                              <img class="do-list-image" src="images/google-analytics-reporting.png" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Custom Dashboards</h3>
-                                <p>Design and build custom dashboards to showcase volume trends, sales forecasts, and company profitibilty. </p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <img class="do-list-image" src="images/download.jpeg" alt="">
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Family</h3>
-                                <p>When I am not off saving the world one for loop at a time, I am spending as much time with my family as I can living the dad life.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div><!--/.row-->
+              </div>
             </div>
-            <div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">My Skills</h2>
-                            <hr>
-                            <p>What makes me valuable asset of whatever team I am apart of?</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!--/.item-->
+      </div>
+      <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+  </section>
+  <!--/#main-slider-->
+
+
+
+  <div id="content-wrapper">
+    <section id="services" class="white">
+      <div class="container">
+        <div class="gap"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="center gap fade-down section-heading">
+              <h2 class="main-title">Stuff I Do</h2>
+              <hr>
+              <p>I enjoy taking on new projects and learning new things. Here are just a few I fill my time with.</p>
             </div>
-            <div class="container">
-            <div class="row">
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-red bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Javascript</h3>
-	                            <span>Code wars skills are rising as we speak.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="65.5%" style="width: 65.5%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">65.5</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-cyan bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Analytics</h3>
-	                            <span>Everything makes sense in a bar chart.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="98.5%" style="width: 98.5%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">98.5</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-primary bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Web Development</h3>
-	                            <span>Front end / back end. All time well spent </span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="75%" style="width: 75%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">75</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-pink bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Drinking Coffee</h3>
-	                            <span>Magic happens as long as the cup stay full.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="100%" style="width: 100%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">100</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div><!--/.row-->
-	            <div class="gap"></div>
-        	</div>
-        </section>
-
-
-		<section id="single-quote" class="divider-section">
-	            <div class="container">
-	            	<div class="gap"></div>
-	                <div class="row">
-	                    <div class='col-md-offset-2 col-md-8 fade-up'>
-	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-	                            <div class="carousel-inner">
-	                                <div class="item active">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-3 text-center">
-	                                                <img class="img-responsive" src="images/team/team01.jpg" style="width: 100px;height:100px;">
-	                                            </div>
-	                                            <div class="col-sm-9">
-	                                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-	                                                <small>Someone famous</small>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="gap"></div>
-	      		</div>
-  		</section>
-
-        <section id="about-us" class="white">
-        	<div class="container">
-	            <div class="gap"></div>
-	            <div class="row">
-	                <div class="col-md-12">
-	                    <div class="center gap fade-down section-heading">
-	                        <h2 class="main-title">A Little About Me</h2>
-	                        <hr>
-	                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-md-10 col-md-offset-1 fade-up">
-                      <img class="personal_logo" src="images/rickard_josh_pic.JPG">
-	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-
-	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-	                </div>
-                </div>
-                 <div class="gap"></div>
-                  <div class="row fade-up">
-                      <div class="col">
-                          <div class="testimonial-list-item">
-                          </div>
-                      </div>
-                  </div>
-	                <div class="col-md-4 fade-up">
-
-	                </div>
-
-
-	            <div class="gap"></div>
-	            <div class="gap"></div>
-            </div>
-        </section>
-
-        <section id="stats" class="divider-section">
-            <div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <div class="center bounce-in">
-                            <span class="stat-icon"><span class="pe-7s-timer bounce-in"></span></span>
-                            <h1><span class="counter">246000</span></h1>
-                            <h3>HOURS SAVED</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="center bounce-in">
-                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
-                            <h1><span class="counter">16875</span></h1>
-                            <h3>FRESH IDEAS</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="center bounce-in">
-                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
-                            <h1><span class="counter">99999999</span></h1>
-                            <h3>HUGE PROFIT</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <div class="center bounce-in">
-                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
-                            <h1><span class="counter">54875</span></h1>
-                            <h3>THINGS IN BOXES</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gap"></div>
-        </section>
-
-        <section id="stats" class="divider-section">
-            <div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                  </div>
-            </section>
-
-        <section id="portfolio" class="white">
-       		<div class="container">
-	        	<div class="gap"></div>
-		        	<div class="center gap fade-down section-heading">
-		                <h2 class="main-title">Portfolio Of Excellence</h2>
-		                <hr>
-		                <p>Here are just a few examples of my work. click below to enhance.</p>
-		            </div>
-                      <ul class="portfolio-filter fade-down center">
-                        <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Zoho</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Dashboards</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Web</a></li>
-                    </ul><!--/#portfolio-filter-->
-
-                    <ul class="portfolio-items col-3 isotope fade-up">
-                        <li class="portfolio-item apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio01.jpg" alt="">
-                                <h5>Deluge sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/Screen Shot 2019-04-18 at 4.35.25 PM.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio02.jpg" alt="">
-                                <h5>Dashboard Sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="https://analytics.zoho.com/open-view/1118732000004199660" target="_blank" rel=""><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item bootstrap design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio03.jpg" alt="">
-                                <h5>Web</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio04.jpg" alt="">
-                                <h5>deluge sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/Screen Shot 2019-04-18 at 4.33.12 PM.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio05.jpg" alt="">
-                                <h5>dashboard sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio06.jpg" alt="">
-                                <h5>Dashboard Sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio07.jpg" alt="">
-                                <h5>web</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio08.jpg" alt="">
-                                <h5>Dashboard sample</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio09.jpg" alt="">
-                                <h5>web</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </li><!--/.portfolio-item-->
-                    </ul>
-                </div>
-            </section>
-
-
-			<div id="mapwrapper">
-				<div id="map"></div>
-			</div>
-
-            <section id="contact" class="white">
-                <div class="container">
-                	<div class="gap"></div>
-                    <div class="center gap fade-down section-heading">
-                        <h2 class="main-title">Get In Touch</h2>
-                        <hr>
-                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                    </div>
-                    <div class="gap"></div>
-                    <div class="row">
-                        <div class="col-md-4 fade-up">
-                            <h3>Contact Information</h3>
-                            <p><span class="icon icon-home"></span>Grand Rapids, MI<br/>
-                                <span class="icon icon-mobile"></span>512.820.4156<br/>
-                                <span class="icon icon-envelop"></span> <a href="#">joshtrickard@gmail.com</a> <br/>
-                            </p>
-                        </div><!-- col -->
-
-                        <div class="col-md-8 fade-up">
-                            <h3>Let's Chat</h3>
-                            <br>
-                            <br>
-                            <div id="message"></div>
-                            <form method="post" action="sendemail.php" id="contactform">
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                                <input type="text" name="email" id="email" placeholder="Email" />
-                                <input type="text" name="website" id="website" placeholder="Website" />
-                                <textarea name="comments" id="comments" placeholder="Comments"></textarea>
-                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" />
-                            </form>
-                        </div><!-- col -->
-                    </div><!-- row -->
-                    <div class="gap"></div>
-                </div>
-            </section>
+          </div>
         </div>
 
-    <div id="footer-wrapper">
-        <footer id="footer" class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        &copy; Joshua Rickard
-                    </div>
-                    <div class="col-sm-4">
-                        <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
-                        </ul>
-                    </div>
-                </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/zoho-products-logo.jpg" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Zoho</h3>
+                <p>CRM, Creator, custom functions. Skilled in deluge programming and building comprehensive reporting in zoho analytics.</p>
+              </div>
             </div>
-        </footer><!--/#footer-->
+          </div>
+          <!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/apple-podcast.png" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Podcasting</h3>
+                <p>Co-host a podcast on marketing and communication strategy for non-profits</p>
+              </div>
+            </div>
+          </div>
+          <!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/Screen-Shot-2016-03-28-at-7.51.42-AM.png" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Coding Challenges</h3>
+                <p>If you don't use it you lose it. Participating in daily coding challenges allows me to continue to grow as a programmer.</p>
+              </div>
+            </div>
+          </div>
+          <!--/.col-md-4-->
+        </div>
+        <!--/.row-->
+        <div class="gap"></div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Programming</h3>
+                <p>Aside from leveling up in code wars, I am also actively seeking opportunities to grow as developer.</p>
+              </div>
+            </div>
+          </div>
+          <!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/google-analytics-reporting.png" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Custom Dashboards</h3>
+                <p>Design and build custom dashboards to showcase volume trends, sales forecasts, and company profitibilty. </p>
+              </div>
+            </div>
+          </div>
+          <!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="service-block">
+              <div class="pull-left bounce-in">
+                <img class="do-list-image" src="images/download.jpeg" alt="">
+              </div>
+              <div class="media-body fade-up">
+                <h3 class="media-heading">Family</h3>
+                <p>When I am not off saving the world one for loop at a time, I am spending as much time with my family as I can living the dad life.</p>
+              </div>
+            </div>
+          </div>
+          <!--/.col-md-4-->
+        </div>
+        <!--/.row-->
+      </div>
+      <div class="gap"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="center gap fade-down section-heading">
+              <h2 class="main-title">My Skills</h2>
+              <hr>
+              <p>What makes me a valuable asset of whatever team I am apart of?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="tile-progress tile-red bounce-in">
+              <div class="tile-header">
+                <h3>Javascript</h3>
+                <span>Code wars skills are rising as we speak.</span>
+              </div>
+              <div class="tile-progressbar">
+                <span data-fill="65.5%" style="width: 65.5%;"></span>
+              </div>
+              <div class="tile-footer">
+                <h4>
+	                                <span class="pct-counter counter">65.5</span>%
+	                            </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="tile-progress tile-cyan bounce-in">
+              <div class="tile-header">
+                <h3>Analytics</h3>
+                <span>Everything makes sense in a bar chart.</span>
+              </div>
+              <div class="tile-progressbar">
+                <span data-fill="98.5%" style="width: 98.5%;"></span>
+              </div>
+              <div class="tile-footer">
+                <h4>
+	                                <span class="pct-counter counter">98.5</span>%
+	                            </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="tile-progress tile-primary bounce-in">
+              <div class="tile-header">
+                <h3>Web Development</h3>
+                <span>Front end / back end. All time well spent </span>
+              </div>
+              <div class="tile-progressbar">
+                <span data-fill="75%" style="width: 75%;"></span>
+              </div>
+              <div class="tile-footer">
+                <h4>
+	                                <span class="pct-counter counter">75</span>%
+	                            </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="tile-progress tile-pink bounce-in">
+              <div class="tile-header">
+                <h3>Drinking Coffee</h3>
+                <span>Magic happens as long as the cup stay full.</span>
+              </div>
+              <div class="tile-progressbar">
+                <span data-fill="100%" style="width: 100%;"></span>
+              </div>
+              <div class="tile-footer">
+                <h4>
+	                                <span class="pct-counter counter">100</span>%
+	                            </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.row-->
+        <div class="gap"></div>
+      </div>
+    </section>
+
+
+    <section id="single-quote" class="divider-section">
+      <div class="container">
+        <div class="gap"></div>
+        <div class="row">
+          <div class='col-md-offset-2 col-md-8 fade-up'>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="img-responsive" src="images/team/team01.jpg" style="width: 100px;height:100px;">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap"></div>
+      </div>
+    </section>
+
+    <section id="about-us" class="white">
+      <div class="container">
+        <div class="gap"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="center gap fade-down section-heading">
+              <h2 class="main-title">A Little About Me</h2>
+              <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+              <img class="personal_logo" src="images/rickard_josh_pic.JPG">
+            </div>
+          <div class="col-sm-6">
+            <p class="about_me_p">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna
+              eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse
+              in orci enim.</p>
+          </div>
+      </div>
+        </div>
+    </section>
+
+    <section id="stats" class="divider-section">
+      <div class="gap"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="center bounce-in">
+              <span class="stat-icon"><span class="pe-7s-timer bounce-in"></span></span>
+              <h1><span class="counter">246000</span></h1>
+              <h3>HOURS SAVED</h3>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="center bounce-in">
+              <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+              <h1><span class="counter">16875</span></h1>
+              <h3>FRESH IDEAS</h3>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="center bounce-in">
+              <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+              <h1><span class="counter">99999999</span></h1>
+              <h3>HUGE PROFIT</h3>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="center bounce-in">
+              <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+              <h1><span class="counter">54875</span></h1>
+              <h3>THINGS IN BOXES</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gap"></div>
+    </section>
+
+    <section id="stats" class="divider-section">
+      <div class="gap"></div>
+      <div class="container">
+        <div class="row">
+        </div>
+    </section>
+
+    <section id="portfolio" class="white">
+      <div class="container">
+        <div class="gap"></div>
+        <div class="center gap fade-down section-heading">
+          <h2 class="main-title">Portfolio Of Excellence</h2>
+          <hr>
+          <p>Here are just a few examples of my work. click below to enhance.</p>
+        </div>
+        <ul class="portfolio-filter fade-down center">
+          <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
+          <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Zoho</a></li>
+          <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Dashboards</a></li>
+          <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Web</a></li>
+        </ul>
+        <!--/#portfolio-filter-->
+
+        <ul class="portfolio-items col-3 isotope fade-up">
+          <li class="portfolio-item apps isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio01.jpg" alt="">
+              <h5>Deluge sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/Screen Shot 2019-04-18 at 4.35.25 PM.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item joomla nature isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio02.jpg" alt="">
+              <h5>Dashboard Sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="https://analytics.zoho.com/open-view/1118732000004199660" target="_blank" rel=""><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item bootstrap design isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio03.jpg" alt="">
+              <h5>Web</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item joomla design apps isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio04.jpg" alt="">
+              <h5>deluge sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/Screen Shot 2019-04-18 at 4.33.12 PM.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item joomla apps isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio05.jpg" alt="">
+              <h5>dashboard sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item wordpress nature isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio06.jpg" alt="">
+              <h5>Dashboard Sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item joomla design apps isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio07.jpg" alt="">
+              <h5>web</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item joomla nature isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio08.jpg" alt="">
+              <h5>Dashboard sample</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+          <li class="portfolio-item wordpress design isotope-item">
+            <div class="item-inner">
+              <img src="images/portfolio/folio09.jpg" alt="">
+              <h5>web</h5>
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--/.portfolio-item-->
+        </ul>
+      </div>
+    </section>
+
+
+    <div id="mapwrapper">
+      <div id="map"></div>
+    </div>
+
+    <section id="contact" class="white">
+      <div class="container">
+        <div class="gap"></div>
+        <div class="center gap fade-down section-heading">
+          <h2 class="main-title">Get In Touch</h2>
+          <hr>
+          <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+        </div>
+        <div class="gap"></div>
+        <div class="row">
+          <div class="col-md-4 fade-up">
+            <h3>Contact Information</h3>
+            <p><span class="icon icon-home"></span>Grand Rapids, MI<br/>
+              <span class="icon icon-mobile"></span>512.820.4156<br/>
+              <span class="icon icon-envelop"></span> <a href="#">joshtrickard@gmail.com</a> <br/>
+            </p>
+          </div>
+          <!-- col -->
+
+          <div class="col-md-8 fade-up">
+            <h3>Let's Chat</h3>
+            <br>
+            <br>
+            <div id="message"></div>
+            <form method="post" action="sendemail.php" id="contactform">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="text" name="email" id="email" placeholder="Email" />
+              <input type="text" name="website" id="website" placeholder="Website" />
+              <textarea name="comments" id="comments" placeholder="Comments"></textarea>
+              <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" />
+            </form>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+        <div class="gap"></div>
+      </div>
+    </section>
+    </div>
+
+    <div id="footer-wrapper">
+      <footer id="footer" class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              &copy; Joshua Rickard
+            </div>
+            <div class="col-sm-4">
+              <ul class="pull-right">
+                <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                <!--#gototop-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--/#footer-->
     </div>
 
 
@@ -524,4 +555,5 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
     <script src="js/init.js"></script>
 </body>
+
 </html>
