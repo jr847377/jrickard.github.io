@@ -39,13 +39,13 @@ jQuery(function($) {
 		$('html, body').animate({
 			scrollTop: $("body").offset().top
 		}, 500);
-	});	
+	});
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false,
 		theme: 'light_square'
-	});	
+	});
 
 	jQuery('.prevbg').click(function(x) { x.preventDefault(); jQuery('body').data('backstretch').prev(); });
   	jQuery('.nextbg').click(function(x) { x.preventDefault(); jQuery('body').data('backstretch').prev(); });
@@ -57,10 +57,10 @@ jQuery(function($) {
 $(window).scroll(function() {
 'use strict';
     var scroll_pos = 0;
-    $(document).scroll(function() { 
+    $(document).scroll(function() {
         var windowsHeight = $(window).height();
         scroll_pos = $(this).scrollTop();
-        if(scroll_pos > windowsHeight) {     	        
+        if(scroll_pos > windowsHeight) {
             $('.navbar-fixed-top').removeClass('opaqued');
         } else {
             $('.navbar-fixed-top').addClass('opaqued');
@@ -79,7 +79,7 @@ jQuery(document).ready(function($){
 'use strict';
   var windowsHeight = $(window).height();
   scroll_pos = $(this).scrollTop();
-  if(scroll_pos > windowsHeight) {              
+  if(scroll_pos > windowsHeight) {
       $('.navbar-fixed-top').removeClass('opaqued');
   } else {
       $('.navbar-fixed-top').addClass('opaqued');
@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
 /*-----------------------------------------------------------------------------------*/
 /*  NICESCROLL
 /*-----------------------------------------------------------------------------------*/
- 
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  ANIMATE
@@ -126,10 +126,10 @@ jQuery(document).ready(function($){
 jQuery(document).ready(function($){
 'use strict';
   jQuery('.fade-up, .fade-down, .bounce-in, .flip-in').addClass('no-display');
-  jQuery('.bounce-in').one('inview', function() { 
+  jQuery('.bounce-in').one('inview', function() {
     jQuery(this).addClass('animated bounceIn appear');
   });
-  jQuery('.flip-in').one('inview', function() { 
+  jQuery('.flip-in').one('inview', function() {
     jQuery(this).addClass('animated flipInY appear');
   });
   jQuery('.counter').counterUp({
@@ -193,14 +193,25 @@ jQuery(document).ready(function($){
     $("#message").slideUp(750,function() {
     $('#message').hide();
     $('#submit').attr('disabled','disabled');
-    $.post(action, {
-      name: $('#name').val(),
-      email: $('#email').val(),
-      website: $('#website').val(),
-      comments: $('#comments').val()
+    var name = $("#name");
+    var email = $("#email");
+    var website = $("#website");
+    var comments = $("#comments");
+    $("#message").empty(); // To empty previous error/success message.
+    // Checking for blank fields.
+    if (name == '' || email == '') {
+      alert("Please Fill Required Fields");
+    }else {
+      // Returns successful data submission message
+    }
+    $.post("contact_form.php", {
+      name1: name,
+      email1: email,
+      website1: website,
+      comments1: comments
     },
       function(data){
-        document.getElementById('message').innerHTML = data;
+        $("#message").append(data);
         $('#message').slideDown('slow');
         $('#submit').removeAttr('disabled');
         if(data.match('success') != null) $('#contactform').slideUp('slow');
@@ -210,7 +221,7 @@ jQuery(document).ready(function($){
     });
     return false;
   });
-  
+
 });
 
 /*-----------------------------------------------------------------------------------*/
